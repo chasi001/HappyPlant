@@ -17,9 +17,9 @@ int limit = NULL;
 float curMoist = NULL;
 
 // Wifi setup and mqtt broker
-const char* ssid = "MB210-G"; //Tested in MB210 classrooms wifi network
-const char* password = "studentMAMK";
-const char* mqtt_server = "172.20.49.6";
+const char* ssid = "Your wifi ssid";
+const char* password = "wifi password";
+const char* mqtt_server = "mqtt ip address";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
