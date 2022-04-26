@@ -8,10 +8,10 @@ const mqtt = require('mqtt');
 const app = express();
 const port = process.env.PORT || "3000";
 
-const client = mqtt.connect("mqtt://192.168.0.103:1884");
+const client = mqtt.connect("mqtt://MQTT ip address:port");
 const topic = "HP/+";
 
-var moisture ="60";
+var moisture ="";
 var automatic="";
 var limit = 0;
 var urlencodedParser = bodyParser.urlencoded({extended: false});
