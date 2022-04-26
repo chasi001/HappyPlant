@@ -1,0 +1,41 @@
+html
+  head
+    tite= 'HappyPlant'
+  body
+    h1= 'Making plants happy!'
+
+    h2= `Plants current moisture: ${value}%`
+  
+      form(method="get" action="/")
+        p Update moisture:
+          input(type="submit", value="Update")
+
+    form(method="get" action="/water")
+      input(type="submit", value="Water!")
+    p1= message
+    
+    
+    h2= 'Set to automatic'
+    
+      form(method="post" action="/auto") 
+        p Moisture level (1-100%):
+          input(type="text", name="limits", placeholder="Enter moisture limit", id="limit")
+          input(onClick=`auto(document.getElementById('limit').value)`,type="submit", value="Set Auto")      
+      p5= mode
+
+    form(method="post" action="/auto/stop")
+          input(type="submit", value="Stop Auto")
+    
+    script(src="/client.js")
+
+
+  
+  
+      
+
+      
+  
+
+
+
+
